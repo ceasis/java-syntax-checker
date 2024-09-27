@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tokens-area,
+.stack-area,
+.parser-area {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  min-height: 300px;
+  text-align: left;
+  overflow-y: auto;
+}
+
+h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.token,
+.stack-item,
+.parser-node {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #61dafb;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.stack-item {
+  background-color: #ffca28; /* Stack items have a different color */
+}
+
+.parser-node {
+  background-color: #ffa726;
+}
+
+.error {
+  background-color: #e57373 !important;
+  color: white;
+}
+
+.success {
+  background-color: #81c784 !important;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}

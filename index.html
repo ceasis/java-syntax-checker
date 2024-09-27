@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexical Analyzer, Stack, and Parser Animation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lexical Analyzer, Stack, and Parser</h1>
+
+      <textarea id="sourceCode" placeholder="Enter your code here...">
+if (x < 10) {
+    if (y > 5) {
+        y = y - 1;
+    } else {
+        y = 0;
+    }
+} else {
+    x = 0;
+}
+        </textarea
+      >
+
+      <div class="columns">
+        <div class="tokens-area">
+          <h3>Tokens:</h3>
+          <div id="tokens"></div>
+        </div>
+        <div class="stack-area">
+          <h3>Stack:</h3>
+          <div id="stack"></div>
+        </div>
+        <div class="parser-area">
+          <h3>Parser:</h3>
+          <div id="parser"></div>
+        </div>
+      </div>
+
+      <button id="startAnimation">Start Animation</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
